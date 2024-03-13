@@ -1,0 +1,114 @@
+/* styles.css */
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik';
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width:768px){
+  .container{
+    margin: 0px auto;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #9c9c9c;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: "Rubik";
+  height: 40px;
+
+  
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.tab-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-container input[type="radio"] {
+  display: none;
+}
+
+.tab-container label {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  font-family: 'Rubik';
+}
+
+.tab-container input[type="radio"]:checked + label {
+  background-color: #ffb09363;
+  color: #000000;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Rubik';
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+button[type="submit"]:hover {
+  background-color: #353535;
+}
